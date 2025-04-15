@@ -25,3 +25,7 @@
 .nav-link {
     margin-left: 1.5rem !important;
 }
+
+.img-200 {
+    max-width: 200px;
+}
