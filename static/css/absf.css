@@ -1,0 +1,21 @@
+.ftxt-inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fs-14 {
+  font-size: 19px;
+  line-height: 1.5;
+}
+
+.fs-22 {
+  font-size: 29px;
+  line-height: 1.4;    
+}
+
+
+ul.dashed {
+    list-style-type: ' - ';
+}
