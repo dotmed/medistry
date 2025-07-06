@@ -5,6 +5,7 @@
         let yearTxt = document.getElementById('spanYear');
         yearTxt.innerText = new Date().getFullYear();
     });
+   
 })();
    
    
