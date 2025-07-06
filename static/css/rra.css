@@ -1,0 +1,33 @@
+.ftxt-inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ftxt-noto {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.fs-14 {
+  font-size: 19px;
+  line-height: 1.5;
+}
+
+.fs-22 {
+  font-size: 29px;
+  line-height: 1.4;    
+}
+
+.fs-10 {
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+ul.dashed {
+    list-style-type: ' - ';
+}
