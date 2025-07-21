@@ -46,7 +46,8 @@
                 'Nameweb',
                 'Go Daddy Corporate Domains',
                 'Gandi',
-                'IP Twins'
+                'IP Twins',
+                'INWX'
             ];
             renderRegistrars(container, registrarNames);
         }
