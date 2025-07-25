@@ -47,7 +47,10 @@
                 'Go Daddy Corporate Domains',
                 'Gandi',
                 'IP Twins',
-                'INWX'
+                'INWX',
+                'Tucows',
+                'Ascio',
+                'Enom',
             ];
             renderRegistrars(container, registrarNames);
         }
