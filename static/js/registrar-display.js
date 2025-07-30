@@ -51,6 +51,7 @@
                 'Tucows',
                 'Ascio',
                 'Enom',
+                'Porkbun'
             ];
             renderRegistrars(container, registrarNames);
         }
