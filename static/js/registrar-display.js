@@ -53,7 +53,10 @@
                 'Enom',
                 'Porkbun',
                 'InternetX',
-                'Name.com'
+                'Name.com',
+                '101domain',
+                'EnCirca',
+                'Lexsynergy'
             ];
             renderRegistrars(container, registrarNames);
         }
