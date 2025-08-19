@@ -52,7 +52,8 @@
                 'Ascio',
                 'Enom',
                 'Porkbun',
-                'InternetX'
+                'InternetX',
+                'Name.com'
             ];
             renderRegistrars(container, registrarNames);
         }
