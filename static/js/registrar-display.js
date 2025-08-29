@@ -37,7 +37,6 @@
                 'EuroDNS',
                 'Markmonitor',
                 'Safenames',
-                'Variomedia',
                 'Dynadot',
                 'Secura',
                 'BB-Online',
