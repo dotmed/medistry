@@ -52,7 +52,8 @@
                 'Enom',
                 'Porkbun',
                 'InternetX',
-                'Name.com'
+                'Name.com',
+                'Ledl.net'
             ];
             renderRegistrars(container, registrarNames);
         }
