@@ -29,3 +29,20 @@
 .img-200 {
     max-width: 200px;
 }
+
+.premiumtld-img {
+    max-width: 400px;
+}
+
+.pss-link-text {
+    font-size: 1.6rem !important;
+}
+
+@media (max-width:480px) {
+    .premiumtld-img {
+        width: 100%!important;
+    }
+    .pss-link-text {
+        font-size: 1.4rem !important;
+    }
+}
