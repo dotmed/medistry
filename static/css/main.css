@@ -31,11 +31,11 @@
 }
 
 .premiumtld-img {
-    max-width: 400px;
+    max-width: 300px;
 }
 
 .pss-link-text {
-    font-size: 1.6rem !important;
+    font-size: 1.15rem !important;
 }
 
 @media (max-width:480px) {
