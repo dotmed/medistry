@@ -77,7 +77,6 @@
                 'Tucows',
                 'Ascio',
                 'Enom',
-                'Porkbun',
                 'InternetX'
             ];
             renderRegistrars(container, registrarNames);
@@ -115,6 +114,11 @@
                     "title": "Name.com",
                     "alt": "Name.com",
                     "href": "https://www.name.com/domains/med"
+                },
+                {
+                    "title": "Porkbun",
+                    "alt": "Porkbun",
+                    "href": "https://porkbun.com/tld/med"
                 }
             ];
             renderLinkedRegistrar(linkedContainer, linkedRegistrarNames);
