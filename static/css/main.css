@@ -46,3 +46,12 @@
         font-size: 1.4rem !important;
     }
 }
+
+@media (min-width: 1200px) {
+    .ms-xl-5 {
+        margin-left: 3rem !important;
+    }
+    .w-xl-50 {
+        width: 50% !important;
+    }
+}
