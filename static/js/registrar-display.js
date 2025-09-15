@@ -71,7 +71,6 @@
                 'Soluciones',
                 'Nameweb',
                 'Go Daddy Corporate Domains',
-                'Gandi',
                 'IP Twins',
                 'INWX',
                 'Tucows',
@@ -119,6 +118,11 @@
                     "title": "Porkbun",
                     "alt": "Porkbun",
                     "href": "https://porkbun.com/tld/med"
+                },
+                {
+                    "title": "Gandi",
+                    "alt": "Gandi",
+                    "href": "https://www.gandi.net/en-US/domain/tld/med"
                 }
             ];
             renderLinkedRegistrar(linkedContainer, linkedRegistrarNames);
