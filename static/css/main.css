@@ -34,14 +34,23 @@
     max-width: 300px;
 }
 
+.bigrelease-img {
+    max-width: 350px;
+}
+
 .pss-link-text {
     font-size: 1.15rem !important;
 }
 
 @media (max-width:480px) {
     .premiumtld-img {
-        width: 100%!important;
+        width: 100% !important;
     }
+
+    .bigrelease-img {
+        max-width: 100% !important;
+    }
+
     .pss-link-text {
         font-size: 1.4rem !important;
     }
@@ -51,6 +60,7 @@
     .ms-xl-5 {
         margin-left: 3rem !important;
     }
+
     .w-xl-50 {
         width: 50% !important;
     }
