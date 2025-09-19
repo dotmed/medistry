@@ -76,7 +76,8 @@
                 'Tucows',
                 'Ascio',
                 'Enom',
-                'InternetX'
+                'InternetX',
+                'Net-Chinese Co Ltd'
             ];
             renderRegistrars(container, registrarNames);
         }
