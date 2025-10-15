@@ -77,7 +77,8 @@
                 'Ascio',
                 'Enom',
                 'InternetX',
-                'Net-Chinese Co Ltd'
+                'Net-Chinese Co Ltd',
+                'Fastly'
             ];
             renderRegistrars(container, registrarNames);
         }
