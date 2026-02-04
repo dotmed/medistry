@@ -64,7 +64,6 @@
                 'EuroDNS',
                 'Markmonitor',
                 'Safenames',
-                'Dynadot',
                 'Secura',
                 'BB-Online',
                 'Global Domain Group',
@@ -78,7 +77,8 @@
                 'Enom',
                 'InternetX',
                 'Net-Chinese Co Ltd',
-                'Fastly'
+                'Fastly',
+                'CPS-Datasysteme'
             ];
             renderRegistrars(container, registrarNames);
         }
@@ -125,6 +125,11 @@
                     "title": "Gandi",
                     "alt": "Gandi",
                     "href": "https://www.gandi.net/en-US/domain/tld/med"
+                },
+                {
+                    "title": "Dynadot",
+                    "alt": "Dynadot",
+                    "href": "https://www.dynadot.com/domain/med"
                 }
             ];
             renderLinkedRegistrar(linkedContainer, linkedRegistrarNames);
