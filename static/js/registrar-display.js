@@ -78,7 +78,8 @@
                 'InternetX',
                 'Net-Chinese Co Ltd',
                 'Fastly',
-                'CPS-Datasysteme'
+                'CPS-Datasysteme',
+                'Netim'
             ];
             renderRegistrars(container, registrarNames);
         }
