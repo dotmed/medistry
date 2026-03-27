@@ -1,0 +1,17 @@
+.ftxt-ss3 {
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.txt-title {
+    color: #0070C0!important;
+    font-size: xx-large!important;
+}
+
+.txt-stitle {
+    color: #0070C0!important;
+    font-size: larger!important;
+    font-weight: bold!important;
+}
