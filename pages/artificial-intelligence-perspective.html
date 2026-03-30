@@ -84,13 +84,14 @@
                                 <li><a href="#sect-1">Executive Summary</a></li>
                                 <li><a href="#sect-2">The Shift Toward AI-Mediated Discovery</a></li>
                                 <li><a href="#sect-3">Structural Signals (Layer 1) vs. Semantic Signals (Layer 2)</a></li>
-                                <li><a href="#sect-4">The Layer-1 Structural Classification Signal</a></li>
-                                <li><a href="#sect-5">Safety Engineering and Explicit Context</a></li>
-                                <li><a href="#sect-6">Why Medical Is a High-Stakes Domain</a></li>
-                                <li><a href="#sect-7">The Role of the .med Namespace in AI-Driven Discovery</a></li>
-                                <li><a href="#sect-8">Implications for AI-Driven Discovery</a></li>
-                                <li><a href="#sect-9">Key Takeaways</a></li>
-                                <li><a href="#sect-10">Looking Ahead</a></li>
+                                <li><a href="#sect-4">How AI Expresses Inference</a></li>
+                                <li><a href="#sect-5">The Layer-1 Structural Classification Signal</a></li>
+                                <li><a href="#sect-6">Safety Engineering and Explicit Context</a></li>
+                                <li><a href="#sect-7">Why Medical Is a High-Stakes Domain</a></li>
+                                <li><a href="#sect-8">The Role of the .med Namespace in AI-Driven Discovery</a></li>
+                                <li><a href="#sect-9">Implications for AI-Driven Discovery</a></li>
+                                <li><a href="#sect-10">Key Takeaways</a></li>
+                                <li><a href="#sect-11">Looking Ahead</a></li>
                             </ol>
                         </div>
                     </div>
@@ -172,8 +173,27 @@
                 <div id="sect-4" class="mb-2">
                     <span class="txt-stitle mb-2">4. The Layer-1 Structural Classification Signal</span>
                     <div class="row mt-2">
-                        <p>General-purpose domains such as .com or .org can identify the organization (who you are) but do not signal its sector (what you do). This distinction—identity without classification—is a significant source of ambiguity in AI-mediated discovery.</p> 
-                        <p>Reducing ambiguity can be understood as a timing issue. The diagram below illustrates how the presence or absence of a <span class="fw-bold">Layer-1 classification signal</span> (labeled as a 'cue' in Figure 1) changes how AI discovery systems interpret sector context.</p>
+                        <p>Large language models generate responses by predicting what is most likely to come next, not by evaluating or communicating certainty. As a result, probabilistic inferences are often expressed with high fluency and confidence, even when the underlying classification is weak or ambiguous. This behavior is a function of model design: LLMs are optimized for coherence, not for signaling uncertainty.</p>
+                        <p>In safety-critical sectors such as medical information, this dynamic has meaningful implications. When structural classification signals are absent, AI systems must infer context, and those inferences may be delivered in an authoritative manner. This increases the importance of explicit, machine-readable signals that reduce reliance on inference and support more accurate interpretation across AI-mediated discovery systems.</p>
+                        <p>Although AI systems may sound evaluative, their responses are generated through prediction rather than explicit evaluation. They do not inherently:</p>
+                        <ul>
+                            <li>Weigh evidence</li>
+                            <li>Assess Correctness</li>
+                            <li>Compare Alternatives</li>
+                            <li>Form Judgements</li>
+                        </ul>
+                        <p>Instead, they perform a single operation:</p>
+                        <p>They predict the next most likely signal in context. When key structural cues are missing, this predictive process requires the model to infer—effectively a probabilistic estimate—in order to continue.</p>
+                        <p>This behavioral dynamic underscores why early, explicit structural signals play such a critical role in guiding AI-mediated interpretation.</p>
+                    </div>
+                </div>
+                <hr/>
+                <div id="sect-5" class="mb-2">
+                    <span class="txt-stitle mb-2">5. The Layer-1 Structural Classification Signal</span>
+                    <div class="row mt-2">
+                        <p>General-purpose namespaces such as .com or .org can identify the organization (who you are) but do not signal its sector (what you do). This distinction—identity without sector classification—means there is no inherent machine-readable indication that the context is medical, effectively inviting AI systems to infer sector classification.</p>
+                        <p>This reliance on inference introduces avoidable risk, particularly in safety-critical contexts where classification should be explicit rather than inferred.</p>
+                        <p>A Layer-1 structural classification signal provides the missing sector information at the point of entry. Reducing ambiguity is fundamentally a timing issue. The diagram below illustrates how the presence or absence of a Layer-1 classification signal (shown as a “cue” in Figure 1) changes how and when AI discovery systems establish sector context.</p>
                         <div class="d-flex justify-content-center w-100 my-2">
                             <img class="w-75" src="../static/img/aip/fig1.png" alt="Figure 1: Inform & Confirm" />
                         </div>
@@ -184,7 +204,7 @@
                             <dd> Identity Signal (.com/.org) </dd>
                             <dd> Sector unknown </dd>
                             <dt>Layer 2</dt>
-                            <dd> Content and authority signals evaluated </dd>
+                            <dd> Content and authority signals interpreted </dd>
                             <dd> Sector inferred </dd>
                         </dl>
                         <p class="fw-bold">With a Layer-1 Classification Cue</p>
@@ -193,15 +213,15 @@
                             <dd> Identity Signal + classification cue (.med) </dd>
                             <dd> Sector understood </dd>
                             <dt>Layer 2</dt>
-                            <dd> Content and authority signals evaluated </dd>
+                            <dd> Content and authority signals interpreted </dd>
                             <dd> Sector confirmed </dd>
                         </dl>
                         <p> An early, explicit Layer-1 classification signal can allow AI systems to confirm sector context rather than infer it. This reflects a broader safety principle used in medicine, aviation, and safety engineering: whenever possible, critical context should be signaled explicitly rather than left for systems to infer it. </p>
                     </div>
                 </div>
                 <hr/>
-                <div id="sect-5" class="mb-2">
-                    <span class="txt-stitle mb-2">5. Safety Engineering and Explicit Context</span>
+                <div id="sect-6" class="mb-2">
+                    <span class="txt-stitle mb-2">6. Safety Engineering and Explicit Context</span>
                     <div class="row mt-2">
                         <p>Across many safety-critical systems—including aviation, medicine, and industrial engineering—designers seek to minimize reliance on inference when critical context is involved.</p>
                         <p>Examples Include:</p>
@@ -234,8 +254,8 @@
                     </div>
                 </div>
                 <hr/>
-                <div id="sect-6" class="mb-2">
-                    <span class="txt-stitle mb-2">6. Why Medical Is a High-Stakes Domain</span>
+                <div id="sect-7" class="mb-2">
+                    <span class="txt-stitle mb-2">7. Why Medical Is a High-Stakes Domain</span>
                     <div class="row mt-2">
                         <p>Medical information falls into the category that search platforms often describe as <span class="fw-bold">"Your Money or Your Life" (YMYL)</span> content. Errors or misinterpretation in these domains can have direct consequences for individuals.</p>
                         <p>Explicit signals -> clearer interpretation -> safer information environments.</p>
@@ -245,8 +265,8 @@
                     </div>
                 </div>
                 <hr/>
-                <div id="sect-7" class="mb-2">
-                    <span class="txt-stitle mb-2">7. The Role of the .med Namespace in AI-Driven Discovery</span>
+                <div id="sect-8" class="mb-2">
+                    <span class="txt-stitle mb-2">8. The Role of the .med Namespace in AI-Driven Discovery</span>
                     <div class="row mt-2">
                         <p>The <span class="fw-bold">.med</span> top-level domain was created to provide a dedicated namespace for the global medical sector.</p>
                         <p>Registration trends indicate adoption across several categories of medical relevance, including:</p>
@@ -262,8 +282,8 @@
                     </div>
                 </div>
                 <hr/>
-                <div id="sect-8" class="mb-2">
-                    <span class="txt-stitle mb-2">8. Implications for AI-Driven Discovery</span>
+                <div id="sect-9" class="mb-2">
+                    <span class="txt-stitle mb-2">9. Implications for AI-Driven Discovery</span>
                     <div class="row mt-2">
                         <p>As AI systems increasingly mediate access to medical information, structural signals that identify expertise are likely to play an expanding role in how entities are interpreted.</p>
                         <p>Potential implications include:</p>
@@ -277,8 +297,8 @@
                     </div>
                 </div>
                 <hr/>
-                <div id="sect-9" class="mb-2">
-                    <span class="txt-stitle mb-2">9. Key Takeaways</span>
+                <div id="sect-10" class="mb-2">
+                    <span class="txt-stitle mb-2">10. Key Takeaways</span>
                     <div class="row mt-2">
                         <p><span class="fw-bold">• Observed Shift in Discovery Models.</span></p>
                         <p>Historically, discovery systems relied primarily on downstream signals, as traditional search engines used them to infer relevance and determine organic ranking order. </p>
@@ -300,8 +320,8 @@
                     </div>
                 </div>
                 <hr/>
-                <div id="sect-10" class="mb-2">
-                    <span class="txt-stitle mb-2">10. Looking Ahead</span>
+                <div id="sect-11" class="mb-2">
+                    <span class="txt-stitle mb-2">11. Looking Ahead</span>
                     <div class="row mt-2">
                         <p>The internet's infrastructure has historically evolved alongside the systems that interpret it. Traditional search has driven years of page-level optimization, resulting in dense and often noisy information environments that AI systems must interpret. In high-stakes sectors such as medical, this complexity carries greater risk. Medical organizations that provide clear structural signals reduce this risk by establishing context early—before interpretation begins.</p>
                         <p>The rise of AI-mediated discovery encourages a renewed focus on structural signals that provide early context for machine interpretation. In practice, AI systems evaluate many signals simultaneously. Structural signals establish early context, while content and authority signals provide confirming evidence. Because domains are among the earliest structural signals in web discovery, they provide a practical way to establish context at the outset of AI interpretation.</p>
@@ -311,7 +331,7 @@
                     </div>
                 </div>
                 <hr/>
-                <div id="sect-10" class="mb-2">
+                <div id="comments" class="mb-2">
                     <p>Note: The insights in this paper are based on Medistry LLC's observations of AI behavior, emerging industry trends, and our professional interpretation of how digital infrastructure signals are processed by discovery systems.</p>
                     <p><span class="fw-bold">About Medistry, LLC</span></p>
                     <p>Medistry LLC operates the <span class="fw-bold">.med</span> top-level domain, a piece of internet infrastructure designed to provide a dedicated namespace for the global medical sector. In the context of AI-mediated discovery, <span class="fw-bold">.med</span> domains introduce structural classification signals that help establish medical context at the earliest stage of interpretation.</p>
