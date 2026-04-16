@@ -104,10 +104,10 @@
                         <p>We are observing a fundamental shift as artificial intelligence reshapes how medical information is discovered and interpreted online. [<a href="#foot">1</a>] Increasingly, large language models (LLMs) and AI-assisted search systems act as intermediaries between users and the web. As this shift accelerates, the structural signals organizations provide at the earliest stages of web discovery are likely to play an increasingly important role in how AI systems interpret medical expertise. While AI systems evaluate many signals and behaviors vary across models, structural signals represent one of the earliest sources of context available during interpretation.</p>
                         <p>The Domain Name System forms part of the internet's foundational addressing infrastructure. Because top-level domains function as stable namespace identifiers within that system, they are among the earliest machine-readable signals (Layer-1) encountered when discovery systems begin interpreting information sources.</p>
                         <p>General-purpose domains such as .com or .org may signal organizational identity (e.g. commercial or non-profit) but do not signal sector classification. </p>
-                        <p>This distinction—identity without sector classification—is a significant source of ambiguity in AI-mediated discovery because interpretation is primarily left to downstream inference based on content, structured data, citations, and links (Layer-2). [<a href="#foot">2</a>]</p>
+                        <p>This distinction, identity without sector classification, is a significant source of ambiguity in AI-mediated discovery because interpretation is primarily left to downstream inference based on content, structured data, citations, and links (Layer-2). [<a href="#foot">2</a>]</p>
                         <p>When present, Layer-1 classification signals such as the <span class="fw-bold">.med</span> top-level domain can reduce ambiguity, helping to limit the risk of misleading or less reliable information. This follows a safety engineering principle that critical context should be explicitly signaled whenever possible.</p>
-                        <p>In high-stakes domains such as medical—where inaccurate interpretation can affect patient well-being—reducing ambiguity in how medical organizations are  classified supports safer health information environments. [<a href="#foot">3</a>]</p> 
-                        <p>In this context, structural signals (Layer-1) do not replace content and authority (Layer-2)—they establish context early, allowing downstream signals to function as confirmation rather than inference. Reducing reliance on AI inference requires explicit Layer-1 classification signals.</p>
+                        <p>In high-stakes domains such as medical, where inaccurate interpretation can affect patient well-being, reducing ambiguity in how medical organizations are  classified supports safer health information environments. [<a href="#foot">3</a>]</p> 
+                        <p>In this context, structural signals (Layer-1) do not replace content and authority (Layer-2). They establish context early, allowing downstream signals to function as confirmation rather than inference. Reducing reliance on AI inference requires explicit Layer-1 classification signals.</p>
                         <p>This is a timing shift: establish classification early in discovery so downstream signals confirm rather than infer. Layer-1 signals enable this by establishing context at the outset of discovery.</p>
                     </div>
                 </div>
@@ -117,7 +117,7 @@
                     <div class="row mt-2">
                         <p>For most of the past two decades, web discovery has been mediated primarily through search engines. Search engines index and rank web pages by crawling the internet and analyzing page content, links, and user engagement signals.</p>
                         <p>However, the emergence of large language models and AI-assisted search is changing how users access information. Instead of navigating through lists of links, users increasingly ask direct questions and receive synthesized responses generated from multiple sources.</p>
-                        <p>General-purpose domains (e.g. .com, .org) leave a structural gap in sector classification. In traditional search, this gap is addressed downstream. In AI-driven discovery, where interpretation occurs in layers, that gap moves upstream—and becomes materially important. [<a href="#foot">4</a>]</p>
+                        <p>General-purpose domains (e.g. .com, .org) leave a structural gap in sector classification. In traditional search, this gap is addressed downstream. In AI-driven discovery, where interpretation occurs in layers, that gap moves upstream and becomes materially important. [<a href="#foot">4</a>]</p>
                         <p>This shift alters the discovery process:</p>
                         <p><span class="fw-bold">Traditional Search Model</span></p>
                         <ol>
@@ -184,7 +184,7 @@
                             <li>Form Judgements</li>
                         </ul>
                         <p>Instead, they perform a single operation:</p>
-                        <p>They predict the next most likely signal in context. When key structural cues are missing, this predictive process requires the model to infer—effectively a probabilistic estimate—in order to continue. [<a href="#foot">8</a>]</p>
+                        <p>They predict the next most likely signal in context. When key structural cues are missing, this predictive process requires the model to infer, effectively a probabilistic estimate, in order to continue. [<a href="#foot">8</a>]</p>
                         <p>This behavioral dynamic underscores why early, explicit structural signals play such a critical role in guiding AI-mediated interpretation.</p>
                     </div>
                 </div>
@@ -192,13 +192,13 @@
                 <div id="sect-5" class="mb-2">
                     <span class="txt-stitle mb-2">5. The Layer-1 Structural Classification Signal</span>
                     <div class="row mt-2">
-                        <p>General-purpose namespaces such as .com or .org can identify the organization (who you are) but do not signal its sector (what you do). This distinction—identity without sector classification—means there is no inherent machine-readable indication that the context is medical, effectively inviting AI systems to infer sector classification.</p>
+                        <p>General-purpose namespaces such as .com or .org can identify the organization (who you are) but do not signal its sector (what you do). This distinction, identity without sector classification, means there is no inherent machine-readable indication that the context is medical, effectively inviting AI systems to infer sector classification.</p>
                         <p>This reliance on inference introduces avoidable risk, particularly in safety-critical contexts where classification should be explicit rather than inferred. [<a href="#foot">9</a>]</p>
                         <p>A Layer-1 structural classification signal provides the missing sector information at the point of entry. Reducing ambiguity is fundamentally a timing issue. The diagram below illustrates how the presence or absence of a Layer-1 classification signal (shown as a “cue” in Figure 1) changes how and when AI discovery systems establish sector context.</p>
                         <div class="d-flex justify-content-center w-100 my-2">
                             <img class="w-75" src="../static/img/aip/fig1.png" alt="Figure 1: Inform & Confirm" />
                         </div>
-                        <p class="fs-6 fst-italic">Figure 1 illustrates a simple “inform and confirm” approach—where classification context is established upfront and then confirmed through content and authority signals—reducing ambiguity by not relying solely on inference.</p>
+                        <p class="fs-6 fst-italic">Figure 1 illustrates a simple “inform and confirm” approach where classification context is established upfront and then confirmed through content and authority signals, reducing ambiguity by not relying solely on inference.</p>
                         <p class="fw-bold">Without a Layer-1 Classification Cue</p>
                         <dl>
                             <dt>Layer 1</dt>
@@ -224,7 +224,7 @@
                 <div id="sect-6" class="mb-2">
                     <span class="txt-stitle mb-2">6. Safety Engineering and Explicit Context</span>
                     <div class="row mt-2">
-                        <p>Across many safety-critical systems—including aviation, medicine, and industrial engineering—designers seek to minimize reliance on inference when critical context is involved. [<a href="#foot">10</a>]</p>
+                        <p>Across many safety-critical systems including aviation, medicine, and industrial engineering, designers seek to minimize reliance on inference when critical context is involved. [<a href="#foot">10</a>]</p>
                         <p>Examples Include:</p>
                         <ul>
                             <li>Aircraft instrumentation explicitly signals altitude and speed rather than relying on visual inference.</li>
@@ -262,24 +262,52 @@
                         <p>Explicit signals -> clearer interpretation -> safer information environments.</p>
                         <p>Due to this risk, AI systems often apply heightened scrutiny when evaluating medical information sources.</p>
                         <p><span class="fw-bold"> Provide early signals that reduce ambiguity, thus later stages evaluate within the correct context.</span></p>
-                        <p>In medical contexts, reducing ambiguity is aligned with patient safety—helping ensure that information is clearly understood and grounded in reliable sources. Structural signals for medical classification can therefore contribute to reducing ambiguity during the earliest stages of AI interpretation.</p>
+                        <p>In medical contexts, reducing ambiguity is aligned with patient safety. This helps to ensure that information is clearly understood and grounded in reliable sources. Structural signals for medical classification can therefore contribute to reducing ambiguity during the earliest stages of AI interpretation.</p>
                     </div>
                 </div>
                 <hr/>
                 <div id="sect-8" class="mb-2">
                     <span class="txt-stitle mb-2">8. The Role of the .med Namespace in AI-Driven Discovery</span>
                     <div class="row mt-2">
-                        <p>The <span class="fw-bold">.med</span> top-level domain was created to provide a dedicated namespace for the global medical sector.</p>
-                        <p>Registration trends indicate adoption across several categories of medical relevance, including:</p>
+                        <p>The <span class="fw-bold">.med</span> top-level domain is a dedicated namespace for the global medical sector.</p>
+                        <p>As an early structural classification signal, the <span class="fw-bold">.med</span> namespace aligns with the NIST AI Risk Management Framework's MAP function, which establishes and documents system context and intended use ahead of subsequent risk assessment and management activities. [<a href="#foot">12</a>]</p>
+                        <p>As noted by the Institute for AI Policy and Strategy (IAPS), defense-in-depth doctrine holds that “no single layer, no matter how robust, is exclusively relied upon.” [<a href="#foot">13</a>]</p>
+                        <p>In the context of AI-mediated discovery, a structural classification signal answers a single question:</p>
+                        <p><span class="fst-italic">“What subject area does this belong to?”</span></p>
+                        <p>It does not answer:</p>
                         <ul>
-                            <li>Pharmaceutical brands</li>
+                            <li>"Is this entity legitimate?"</li>
+                            <li>"Is this advice correct?"</li>
+                            <li>"Is this actor authorized?"</li>
+                        </ul>
+                        <p>The reliability of a structural classification signal depends on its restraint: by encoding only subject context, it remains unambiguous, interpretable, and usable by AI systems.</p>
+                        <p>Within AI-mediated discovery, the role of <span class="fw-bold">.med</span> is limited to a single determination: <span class="fw-bold">it is medical context</span>.</p>
+                        <p>This addresses the signal gap inherent in general-purpose namespaces (e.g., .com, .org) because AI systems can rely on narrowly scoped structural signals for classification, as explicit signals reduce uncertainty and improve model reliability.
+                        <p>When classification is present, it enables AI systems to more efficiently apply appropriate downstream controls, which can include:</p>
+                        <ul>
+                            <li>higher safety thresholds</li>
+                            <li>strciter evidence requirements</li>
+                            <li>medical-specific policy constraints</li>
+                            <li>increased skepticism toward unsupported claims</li>
+                        </ul>
+                        <p>In other words, classification enables mitigation. It does not replace it.</p>
+                        <p>When classification is missing, downstream systems must infer context, <span class="fw-bold">increasing uncertainty and thereby reducing the reliability of safety-related outcomes</span>. This is a well-established challenge in machine learning systems operating under uncertainty. [<a href="#foot">14</a>]</p>
+                        <p>As a public namespace, a <span class="fw-bold">.med</span> domain establishes an early-stage classification signal at registration, immediately addressing the absence of explicit medical context at the infrastructure layer.</p>
+                        <p>By addressing this signal gap:</p>
+                        <ul>
+                            <li>Uncertainty is reduced</li>
+                            <li>Model reliability improves</li>
+                            <li>Overall system efficiency increases</li>
+                        </ul>
+                        <p>From a system design perspective, the <span class="fw-bold">.med</span> namespace can be viewed as conceptually consistent with structured classification frameworks such as <a href="https://schema.org/" rel="nofollow">Schema.org</a>, providing an early-stage, machine-interpretable indication of sector context.</p>
+                        <p>Registration patterns indicate adoption across several categories of medical relevance, including:</p>
+                        <ul>
+                            <li>Pharamceutical brands</li>
                             <li>Therapeutic categories</li>
                             <li>Clinical specialties</li>
                             <li>Institutional identifiers</li>
                         </ul>
-                        <p>Examples include domains corresponding to drug names, treatment categories, and healthcare organizations.</p>
-                        <p>In some cases, organizations register <span class="fw-bold">.med</span> domains that redirect to their primary sites. For example, a <span class="fw-bold">.med</span> domain may redirect to an existing .org or .com site, adding an early structural classification signal in line with the broader framework described above, while preserving the organization's existing web presence.</p>
-                        <p><span class="fw-bold">.med</span> is closely aligned with Schema.org's framework for classifying medical entities. As a public namespace indexed by AI systems, registering a .med domain fulfills the threshold requirement for establishing a machine-readable medical classification signal the moment it is created—reducing ambiguity.</p>
+                        <p>Examples include domains corresponding to pharmaceutical products, therapeutic categories like analgesics, and healthcare organizations.</p>
                     </div>
                 </div>
                 <hr/>
@@ -301,8 +329,8 @@
                 <div id="sect-10" class="mb-2">
                     <span class="txt-stitle mb-2">10. Agentic AI: The Shift from Interpretation to Action</span>
                     <div class="row mt-2">
-                        <p>Agentic AI refers to systems that don’t just interpret requests or generate responses, but can initiate actions, coordinate tasks, and make decisions on behalf of users. This marks a shift from AI as a passive tool to AI as an active participant in digital workflows. [<a href="#foot">12</a>]</p>
-                        <p>When AI systems begin acting rather than merely interpreting, the timing of classification becomes more critical. A misclassification in traditional AI might lead to an incorrect answer. In agentic systems, when the namespace is not explicit, this can lead to incorrect actions—a more consequential failure mode, especially in medical contexts.</p>
+                        <p>Agentic AI refers to systems that don't just interpret requests or generate responses, but can initiate actions, coordinate tasks, and make decisions on behalf of users. This marks a shift from AI as a passive tool to AI as an active participant in digital workflows. [<a href="#foot">15</a>]</p>
+                        <p>When AI systems begin acting rather than merely interpreting, the timing of classification becomes more critical. A misclassification in traditional AI might lead to an incorrect answer. In agentic systems, when the namespace is not explicit, this can lead to incorrect actions which is a more consequential failure mode, especially in medical contexts.</p>
                         <div class="d-flex justify-content-center w-100 my-2">
                             <img class="w-50" src="../static/img/aip/agentic-signals.png" alt="Figure 2: Agentic Signal Flow" />
                         </div>
@@ -328,7 +356,7 @@
                         <p>Organizations entering the medical sector are not constrained by legacy infrastructure and can signal both identity and sector context at the structural layer through sector-specific domains such as <span class="fw-bold">.med</span>.</p>
                         <p><span class="fw-bold">• The broader principle reflects established safety-system design.</span></p>
                         <p>Across fields such as medicine, aviation, and engineering, critical context is explicitly signaled whenever possible rather than left to inference.</p>
-                        <p>Taken together, these shifts reflect a transition from downstream inference to early-stage classification—where structural signals establish context and downstream signals confirm it.</p>
+                        <p>Taken together, these shifts reflect a transition from downstream inference to early-stage classification, where structural signals establish context and downstream signals confirm it.</p>
 
                     </div>
                 </div>
@@ -336,7 +364,7 @@
                 <div id="sect-12" class="mb-2">
                     <span class="txt-stitle mb-2">12. Looking Ahead</span>
                     <div class="row mt-2">
-                        <p>The internet's infrastructure has historically evolved alongside the systems that interpret it. Traditional search has driven years of page-level optimization, resulting in dense and often noisy information environments that AI systems must interpret. In high-stakes sectors such as medical, this complexity carries greater risk. Medical organizations that provide clear structural signals reduce this risk by establishing context early—before interpretation begins.</p>
+                        <p>The internet's infrastructure has historically evolved alongside the systems that interpret it. Traditional search has driven years of page-level optimization, resulting in dense and often noisy information environments that AI systems must interpret. In high-stakes sectors such as medical, this complexity carries greater risk. Medical organizations that provide clear structural signals reduce this risk by establishing context early, before interpretation begins.</p>
                         <p>The rise of AI-mediated discovery encourages a renewed focus on structural signals that provide early context for machine interpretation. In practice, AI systems evaluate many signals simultaneously. Structural signals establish early context, while content and authority signals provide confirming evidence. Because domains are among the earliest structural signals in web discovery, they provide a practical way to establish context at the outset of AI interpretation.</p>
                         <p> <span class="fw-bold">.med</span> operates as a defined namespace for the medical sector, but its primary value in AI-driven discovery comes from providing an explicit structural classification signal. Its role is not to influence how signals are weighted, but to ensure that critical classification context is present at the earliest stage of interpretation.</p>
                         <p>Organizations cannot control how AI systems interpret signals, but they can control how clearly their own digital infrastructure communicates identity and classification within that process.</p>
@@ -415,6 +443,27 @@
                             Section 2.3 (p. 26).
                             <a target="_blank" href="https://services.google.com/fh/files/misc/hsw-sqrg.pdf">
                                 https://services.google.com/fh/files/misc/hsw-sqrg.pdf</a>
+                        </li>
+                        <li>
+                            NIST, 
+                            <span class="fst-italic">Artificial Intelligence Risk Management Framework</span> 
+                            (AI RMF 1.0), 5.2 (MAP)and 5.3-5.4 (MEASURE, MANAGE), pp. 24-32.
+                            <a target="_blank" href="https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf">
+                                https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf</a>
+                        </li>
+                        <li>
+                            Institute for AI Policy and Strategy (IAPS), 
+                            <span class="fst-italic">Adapting Cybersecurity Frameworks to Manage Frontier AI Risks: A Defense in Depth Approach,</span> 
+                            arXiv:2408.07933, pp. 2-3.
+                            <a target="_blank" href="https://arxiv.org/pdf/2408.07933">
+                                https://arxiv.org/pdf/2408.07933</a>
+                        </li>
+                        <li>
+                            Rudner, T.G.J.; Toner, H.
+                            <span class="fst-italic">Key Concepts in AI Safety: Reliable Uncertainty Quantification in Machine Learning;</span> 
+                            CSET, Georgetown University, 2024; pp. 1-5.
+                            <a target="_blank" href="https://cset.georgetown.edu/wp-content/uploads/CSET-Key-Concepts-in-AI-Safety-Reliable-Uncertainty-Quantification-in-Machine-Learning.pdf">
+                                https://cset.georgetown.edu/wp-content/uploads/CSET-Key-Concepts-in-AI-Safety-Reliable-Uncertainty-Quantification-in-Machine-Learning.pdf</a>
                         </li>
                         <li>
                             McKinsey &amp; Company. (2025). 
